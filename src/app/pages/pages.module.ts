@@ -4,6 +4,9 @@ import { TableEmployeesComponent } from './table-employees/table-employees.compo
 import { AddEmployeComponent } from './add-employe/add-employe.component';
 import { EditEmployeComponent } from './edit-employe/edit-employe.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,16 +15,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TableEmployeesComponent,
     AddEmployeComponent,
     EditEmployeComponent,
+    LoginComponent,
+    AddUserComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   exports: [
     TableEmployeesComponent,
     AddEmployeComponent,
     EditEmployeComponent,
+    LoginComponent,
+    AddUserComponent
   ]
 })
 export class PagesModule { }
